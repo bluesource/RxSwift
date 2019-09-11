@@ -92,9 +92,6 @@ extension DelegateProxyTest {
 }
 #endif
 
-#if os(iOS)
-#endif
-
 extension DelegateProxyTest {
     func test_UITabBarControllerDelegateExtension() {
         performDelegateTest(UITabBarControllerSubclass()) { ExtendTabBarControllerDelegateProxy(tabBarControllerSubclass: $0) }
